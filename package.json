@@ -1,0 +1,39 @@
+{
+  "name": "glslify-promise",
+  "version": "1.0.0",
+  "description": "A Promise wrapper for glslify, providing a consistent interface between both Node.js and browserify",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test | tap-spec"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {
+    "es6-promise": "^2.0.1",
+    "glslify": "^2.1.2",
+    "resolve": "^1.1.6",
+    "static-module": "^1.1.2",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "glsl-noise": "0.0.0",
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackgl/glslify-promise.git"
+  },
+  "keywords": [
+    "ecosystem:stackgl"
+  ],
+  "homepage": "https://github.com/stackgl/glslify-promise",
+  "bugs": {
+    "url": "https://github.com/stackgl/glslify-promise/issues"
+  }
+}
