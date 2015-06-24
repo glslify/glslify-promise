@@ -24,7 +24,7 @@ function glslifyPromiseTransform(filename, opts) {
   return transformer
 
   function glslifyReplace(glslFile, opts) {
-    const origin = path.relative(path.dirname(filename), __dirname)
+    const origin = './' + path.relative(path.dirname(filename), __dirname)
     const stream = through()
 
     opts = opts || {}
