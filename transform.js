@@ -24,7 +24,7 @@ function glslifyPromiseTransform(filename, opts) {
   return transformer
 
   function glslifyReplace(glslFile, opts) {
-    const origin = './' + path.relative(path.dirname(filename), __dirname)
+    const origin = require.resolve('./wrapper')
     const stream = through()
 
     opts = opts || {}
@@ -33,7 +33,7 @@ function glslifyPromiseTransform(filename, opts) {
     glslify.bundle(glslFile, opts, function(err, source) {
       if (err) return transformer.emit('error', err)
 
-      stream.push('require("'+origin+'/wrapper")(')
+      stream.push('require("'+origin+'")(')
       stream.push(JSON.stringify(source))
       stream.push(')')
       stream.push(null)
