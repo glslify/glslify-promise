@@ -1,6 +1,6 @@
 {
   "name": "glslify-promise",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Promise wrapper for glslify, providing a consistent interface between both Node.js and browserify",
   "main": "index.js",
   "license": "MIT",
