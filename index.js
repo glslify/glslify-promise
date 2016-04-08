@@ -6,11 +6,11 @@ var callsite = require('callsite')
 module.exports = createPromise
 
 function createPromise(filename, options) {
-  if (!filename) return '';
+  if (!filename) return ''
 
   if (!path.isAbsolute(filename)) {
-    var stack = callsite();
-    var caller = stack[1].getFileName();
+    var stack = callsite()
+    var caller = stack[1].getFileName()
     filename = path.resolve(path.dirname(caller), filename)
   }
 
