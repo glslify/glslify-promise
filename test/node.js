@@ -3,8 +3,7 @@ const path    = require('path')
 const glslify = require('../')
 
 test('node: simple test', function(t) {
-  const source  = path.join(__dirname, 'fixtures', 'basic.glsl')
-  const promise = glslify(source, {})
+  const promise = glslify('./fixtures/basic.glsl', {})
 
   promise.then(function(output) {
     t.ok(output, 'output provided')

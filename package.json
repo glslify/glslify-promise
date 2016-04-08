@@ -13,6 +13,7 @@
     "url": "http://hughsk.io/"
   },
   "dependencies": {
+    "callsite": "^1.0.0",
     "es6-promise": "^2.0.1",
     "glslify": "^2.1.2",
     "resolve": "^1.1.6",
