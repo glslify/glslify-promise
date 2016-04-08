@@ -20,7 +20,7 @@ For example, the following should work out of the box with Node:
 
 ``` javascript
 var glslify = require('glslify-promise')
-var promise = glslify(__dirname + '/shader.glsl')
+var promise = glslify('./shader.glsl')
 
 promise.then(function(source) {
   console.log(source) // your glslified GLSL source!
@@ -34,7 +34,7 @@ file, you should be able to do the same in browserify too:
 {
   "browserify": {
     "transform": [
-      "glslify-pex/transform"
+      "glslify-promise/transform"
     ]
   }
 }
